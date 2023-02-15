@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    font-family: 'Poppins', sans-serif;
+    background-image: linear-gradient(90deg, #4743d0, #880868);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    overflow-x: hidden ;
+}
+
+h1{
+    font-size: 3rem;
+    color: #fff;
+}
+
+form{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 2.5rem 0;
+}
+
+input,button{
+padding: 15px 20px;
+font-size: 1.2rem;
+background-color: #fff;
+border: none;
+}
+
+input{
+    font-weight: bold;
+}
+
+input:focus{
+    outline: none;
+}
+
+button{
+    cursor: pointer;
+}
+
+.poke-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.poke-box{
+    width: 300px;
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 10px;
+    color: #333;
+    font-size: 1.2rem;
+    margin: 20px;
+}
+.poke-box img{
+    margin: 10px 0;
+    width: 80%;
+}
+
+.poke-box h4{
+    font-size: 1.4rem;
+    margin: 5px auto;
+}
+
+.poke-box p{
+    margin: 5px auto;
+}
