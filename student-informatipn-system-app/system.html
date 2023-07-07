@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Student Information System</title>
+</head>
+
+<body>
+
+
+    <div class="navbar">
+    </div>
+
+
+
+    <div class="wrapper">
+        <!-- add new student -->
+        <div class="new-student">
+            <h2>Add new Student</h2>
+            <form>
+                <div>
+                    <label for="fullName">Full name:</label> <br>
+                    <input class="iname" type="text"> <br>
+                </div>
+
+                <div>
+                    <label for="id">ID:</label> <br>
+                    <input class="iid" type="number"> <br>
+                </div>
+
+                <div>
+                    <label for="enrolled">Course Enrolled:</label> <br>
+                    <input class="icourse" type="text"> <br>
+                </div>
+
+                <div>
+                    <label for="grades">Grades:</label> <br>
+                    <input class="igrades" type="number" min="0" max="100"> <br>
+                </div>
+            </form>
+
+            <button class="add_btn" type="submit">Add</button>
+
+        </div>
+
+        <div class="information">
+            <input placeholder="Filter" class="filter_input">
+            <button class="search_btn">Search</button>
+            <table id="search_table">
+                <thead>
+                    <tr class="info">
+                        <th id="name">Full Name</th>
+                        <th id="id"> ID</th>
+                        <th id="course">Course</th>
+                        <th id="grades">Grades</th>
+                        <th id="action">Action</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+
+
+        </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
