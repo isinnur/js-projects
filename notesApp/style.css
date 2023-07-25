@@ -29,7 +29,7 @@ body {
 /* Left side  */
 
 .left-side {
-  width: 33%;
+  flex-basis: 33%;
   height: 100vh;
   background-color: #0091ea;
   color: #e3f2fd;
@@ -95,7 +95,7 @@ body {
 /* right side */
 .right-side {
   display: flex;
-  width: 67%;
+  flex-basis: 66%;
   height: 100vh;
   align-items: center;
   justify-content: center;
